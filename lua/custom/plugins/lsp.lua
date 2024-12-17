@@ -191,6 +191,12 @@ return {
 
         prettierd = {},
 
+        eslint = {
+          settings = {
+            workingDirectories = { mode = 'auto' },
+          },
+        },
+
         vtsls = {
           filetypes = {
             'javascript',
