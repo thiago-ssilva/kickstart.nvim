@@ -190,6 +190,16 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
+-- Custom Keymaps
+--
+-- Oil Nvim
+vim.keymap.set('n', '-', '<CMD>Oil<CR>', { desc = 'Open parent directory' })
+--
+--  Sourcing
+vim.keymap.set('n', '<space><space>x', '<cmd>source %<CR>')
+vim.keymap.set('n', '<space>x', ':.lua<CR>')
+vim.keymap.set('v', '<space>x', ':lua<CR>')
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
