@@ -34,6 +34,10 @@ return {
         },
       }
     end,
+    keys = {
+      { '<leader>nh', '<cmd>Noice history<cr>', desc = '[N]oice [H]istory' },
+      { '<leader>nd', '<cmd>Noice dismiss<cr>', desc = '[N]oice [D]ismiss' },
+    },
   },
   -- colorscheme
   --
