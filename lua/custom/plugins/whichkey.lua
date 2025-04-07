@@ -50,6 +50,7 @@ return { -- Useful plugin to show you pending keybinds.
       { '<leader>n', group = '[N]noice' },
       { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
       { '<leader>l', group = '[L]azy' },
+      { '<leader>b', group = '[B]uffer' },
     },
   },
 }
