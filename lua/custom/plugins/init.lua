@@ -4,7 +4,7 @@
 -- See the kickstart.nvim README for more information
 return {
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
-  'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
+  { 'tpope/vim-sleuth', enabled = false }, -- Detect tabstop and shiftwidth automatically
   -- Highlight todo, notes, etc in comments
-  { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
+  { 'folke/todo-comments.nvim', event = { 'BufReadPost', 'BufWritePost', 'BufNewFile' }, dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
 }
